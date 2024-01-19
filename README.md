@@ -22,6 +22,9 @@ SNOWFLAKE_WAREHOUSE=
 
 ## Install dependencies
 ```
+conda create -y --name vanna python=3.10
+conda activate vanna
+
 pip install -r requirements.txt
 ```
 
