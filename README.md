@@ -7,6 +7,11 @@ https://github.com/vanna-ai/vanna-flask/assets/7146154/5794c523-0c99-4a53-a558-5
 
 
 
+https://vanna.ai/account/profile
+
+
+
+
 # Setup
 
 ## Set your environment variables

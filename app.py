@@ -5,7 +5,6 @@ load_dotenv()
 from functools import wraps
 from flask import Flask, jsonify, Response, request
 import flask
-import os
 from cache import MemoryCache
 
 app = Flask(__name__, static_url_path='')
@@ -13,28 +12,34 @@ app = Flask(__name__, static_url_path='')
 # SETUP
 cache = MemoryCache()
 
-from vanna.local import LocalContext_OpenAI
-from vanna.openai.openai_chat import OpenAI_Chat
-from vanna.chromadb.chromadb_vector import ChromaDB_VectorStore
-
-vn = LocalContext_OpenAI(
-    config={
-        'api_base': 'http://127.0.0.1:18888/v1',
-        'api_key': '',
-        'model': 'gpt-4',
-    }
-)
+# from vanna.local import LocalContext_OpenAI
+#
+# vn = LocalContext_OpenAI(
+#     config={
+#         'api_base': 'http://127.0.0.1:18888/v1',
+#         'api_key': '123',
+#         'api_type': 'openai',
+#         'model': 'gpt-4',
+#     }
+# )
 
 # from vanna.remote import VannaDefault
 # vn = VannaDefault(model=os.environ['VANNA_MODEL'], api_key=os.environ['VANNA_API_KEY'])
 
-vn.connect_to_snowflake(
-    account=os.environ['SNOWFLAKE_ACCOUNT'],
-    username=os.environ['SNOWFLAKE_USERNAME'],
-    password=os.environ['SNOWFLAKE_PASSWORD'],
-    database=os.environ['SNOWFLAKE_DATABASE'],
-    warehouse=os.environ['SNOWFLAKE_WAREHOUSE'],
-)
+# vn.connect_to_snowflake(
+#     account=os.environ['SNOWFLAKE_ACCOUNT'],
+#     username=os.environ['SNOWFLAKE_USERNAME'],
+#     password=os.environ['SNOWFLAKE_PASSWORD'],
+#     database=os.environ['SNOWFLAKE_DATABASE'],
+#     warehouse=os.environ['SNOWFLAKE_WAREHOUSE'],
+# )
+
+
+
+from vanna.remote import VannaDefault
+vn = VannaDefault(model='chinook', api_key='d09415c3274545ea97dd85baed76b3ac')
+
+vn.connect_to_sqlite('Chinook.sqlite')
 
 
 # NO NEED TO CHANGE ANYTHING BELOW THIS LINE
@@ -65,9 +70,11 @@ def requires_cache(fields):
 
 @app.route('/api/v0/generate_questions', methods=['GET'])
 def generate_questions():
+    questions = vn.generate_questions()
+    print(questions)
     return jsonify({
         "type": "question_list",
-        "questions": vn.generate_questions(),
+        "questions": questions,
         "header": "Here are some questions you can ask:"
     })
 
@@ -81,6 +88,8 @@ def generate_sql():
 
     id = cache.generate_id(question=question)
     sql = vn.generate_sql(question=question)
+
+    print(sql)
 
     cache.set(id=id, field='question', value=question)
     cache.set(id=id, field='sql', value=sql)
