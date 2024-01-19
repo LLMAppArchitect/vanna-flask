@@ -28,6 +28,10 @@ conda activate vanna
 pip install -r requirements.txt
 ```
 
+``` 
+pip install 'vanna[chromadb,openai,postgres]'
+```
+
 ## Run the server
 ```
 python app.py
