@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <!-- 太极阴阳图 -->
+  <circle cx="100" cy="100" r="90" fill="#000000" />
+  <circle cx="100" cy="55" r="40" fill="#FFFFFF" />
+  <circle cx="100" cy="145" r="40" fill="#000000" />
+  <!-- 机器人名称 -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000">Robot</text>
+</svg>

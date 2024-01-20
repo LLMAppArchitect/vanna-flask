@@ -75,7 +75,7 @@ def generate_questions():
     return jsonify({
         "type": "question_list",
         "questions": questions,
-        "header": "Here are some questions you can ask:"
+        "header": "您可以这样问:"
     })
 
 
@@ -89,7 +89,7 @@ def generate_sql():
     id = cache.generate_id(question=question)
     sql = vn.generate_sql(question=question)
 
-    print(sql)
+    print("generate_sql:", sql)
 
     cache.set(id=id, field='question', value=question)
     cache.set(id=id, field='sql', value=sql)
@@ -212,7 +212,7 @@ def generate_followup_questions(id: str, df, question):
             "type": "question_list",
             "id": id,
             "questions": followup_questions,
-            "header": "Here are some followup questions you can ask:"
+            "header": "推荐问题:"
         })
 
 

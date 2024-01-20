@@ -461,9 +461,9 @@ function qr(r) {
     for (let _ = 0; _ < h.length; _ += 1) p[_] = Tn(Ln(r, h, _));
     return {
         c() {
-            e = E("div"), n = E("nav"), t = E("div"), t.innerHTML = '<img class="w-28 h-auto" src="/vanna.svg" alt="Vanna Logo"/> <div class="lg:hidden"><button type="button" class="w-8 h-8 inline-flex justify-center items-center gap-2 rounded-md text-gray-700 align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all dark:text-gray-400 dark:focus:ring-offset-gray-800" data-hs-overlay="#application-sidebar" aria-controls="application-sidebar" aria-label="Toggle navigation"><svg class="w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path></svg> <span class="sr-only">Sidebar</span></button></div>', o = Z(), i = E("div"), s = E("ul"), l = E("li"), c = E("button"), c.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path></svg>
-              Training Data`, a = Z(), d = E("li"), g = E("button"), g.innerHTML = `<svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C8.47339 2 8.85714 2.38376 8.85714 2.85714V7.14286L13.1429 7.14286C13.6162 7.14286 14 7.52661 14 8C14 8.47339 13.6162 8.85714 13.1429 8.85714L8.85714 8.85715V13.1429C8.85714 13.6162 8.47339 14 8 14C7.52661 14 7.14286 13.6162 7.14286 13.1429V8.85715L2.85714 8.85715C2.38376 8.85715 2 8.4734 2 8.00001C2 7.52662 2.38376 7.14287 2.85714 7.14287L7.14286 7.14286V2.85714C7.14286 2.38376 7.52661 2 8 2Z" fill="currentColor"></path></svg>
-              New question`, k = Z();
+            e = E("div"), n = E("nav"), t = E("div"), t.innerHTML = '<img class="w-28 h-auto" src="/ichat.svg" alt="iChat Logo"/> <div class="lg:hidden"><button type="button" class="w-8 h-8 inline-flex justify-center items-center gap-2 rounded-md text-gray-700 align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all dark:text-gray-400 dark:focus:ring-offset-gray-800" data-hs-overlay="#application-sidebar" aria-controls="application-sidebar" aria-label="Toggle navigation"><svg class="w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path></svg> <span class="sr-only">Sidebar</span></button></div>', o = Z(), i = E("div"), s = E("ul"), l = E("li"), c = E("button"), c.innerHTML = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path></svg>
+              训练数据`, a = Z(), d = E("li"), g = E("button"), g.innerHTML = `<svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C8.47339 2 8.85714 2.38376 8.85714 2.85714V7.14286L13.1429 7.14286C13.6162 7.14286 14 7.52661 14 8C14 8.47339 13.6162 8.85714 13.1429 8.85714L8.85714 8.85715V13.1429C8.85714 13.6162 8.47339 14 8 14C7.52661 14 7.14286 13.6162 7.14286 13.1429V8.85715L2.85714 8.85715C2.38376 8.85715 2 8.4734 2 8.00001C2 7.52662 2.38376 7.14287 2.85714 7.14287L7.14286 7.14286V2.85714C7.14286 2.38376 7.52661 2 8 2Z" fill="currentColor"></path></svg>
+              创建对话`, k = Z();
             for (let _ = 0; _ < p.length; _ += 1) p[_].c();
             x = Z(), D = E("div"), D.innerHTML = `<div class="py-2.5 px-7"><p class="inline-flex items-center gap-x-2 text-xs text-green-600"><span class="block w-1.5 h-1.5 rounded-full bg-green-600"></span>
             Connected</p></div> <div class="p-4 border-t border-gray-200 dark:border-gray-700"><a class="flex justify-between items-center gap-x-3 py-2 px-3 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300" href="#replace">Sign out
@@ -506,10 +506,7 @@ function Ar(r, e, n) {
 class Dr extends Se {
     constructor(e) {
         super(), $e(this, e, Ar, qr, xe, {
-            getTrainingData: 0,
-            newQuestionPage: 1,
-            loadQuestionPage: 2,
-            questionHistory: 3
+            getTrainingData: 0, newQuestionPage: 1, loadQuestionPage: 2, questionHistory: 3
         })
     }
 }
@@ -563,9 +560,7 @@ var Hr = {exports: {}};/*! For license information please see preline.js.LICENSE
                             if (typeof u != "function" && u !== null) throw new TypeError("Super expression must either be null or a function");
                             T.prototype = Object.create(u && u.prototype, {
                                 constructor: {
-                                    value: T,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: T, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(T, "prototype", {writable: !1}), u && g(T, u)
                         })(P, L);
@@ -681,9 +676,7 @@ var Hr = {exports: {}};/*! For license information please see preline.js.LICENSE
                             if (typeof f != "function" && f !== null) throw new TypeError("Super expression must either be null or a function");
                             u.prototype = Object.create(f && f.prototype, {
                                 constructor: {
-                                    value: u,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: u, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(u, "prototype", {writable: !1}), f && k(u, f)
                         })(T, m);
@@ -843,9 +836,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof j != "function" && j !== null) throw new TypeError("Super expression must either be null or a function");
                             S.prototype = Object.create(j && j.prototype, {
                                 constructor: {
-                                    value: S,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: S, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(S, "prototype", {writable: !1}), j && m(S, j)
                         })(C, A);
@@ -962,8 +953,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                         placement: this.positions[R] || "bottom-start",
                                         strategy: q,
                                         modifiers: [].concat(x(q !== "fixed" ? this.absoluteStrategyModifiers(S) : []), [{
-                                            name: "offset",
-                                            options: {offset: [0, B]}
+                                            name: "offset", options: {offset: [0, B]}
                                         }])
                                     });
                                     S._popper = N
@@ -1080,9 +1070,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof f != "function" && f !== null) throw new TypeError("Super expression must either be null or a function");
                             u.prototype = Object.create(f && f.prototype, {
                                 constructor: {
-                                    value: u,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: u, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(u, "prototype", {writable: !1}), f && k(u, f)
                         })(T, m);
@@ -1292,9 +1280,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof u != "function" && u !== null) throw new TypeError("Super expression must either be null or a function");
                             T.prototype = Object.create(u && u.prototype, {
                                 constructor: {
-                                    value: T,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: T, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(T, "prototype", {writable: !1}), u && g(T, u)
                         })(P, L);
@@ -1380,9 +1366,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof u != "function" && u !== null) throw new TypeError("Super expression must either be null or a function");
                             T.prototype = Object.create(u && u.prototype, {
                                 constructor: {
-                                    value: T,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: T, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(T, "prototype", {writable: !1}), u && g(T, u)
                         })(P, L);
@@ -1432,9 +1416,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     }), O.forEach(function (j) {
                                         j.addEventListener("click", function (R) {
                                             R.preventDefault(), j.getAttribute("href") !== "javascript:;" && T._scrollTo({
-                                                $scrollspyEl: u,
-                                                $scrollableEl: S,
-                                                $link: j
+                                                $scrollspyEl: u, $scrollableEl: S, $link: j
                                             })
                                         })
                                     })
@@ -1473,9 +1455,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     R = f === document ? 0 : f.offsetTop, q = C.offsetTop - j - R,
                                     B = f === document ? window : f;
                                 this._fireEvent("scroll", u), this._dispatch("scroll.hs.scrollspy", u, u), window.history.replaceState(null, null, O.getAttribute("href")), B.scrollTo({
-                                    top: q,
-                                    left: 0,
-                                    behavior: "smooth"
+                                    top: q, left: 0, behavior: "smooth"
                                 })
                             }
                         }]) && d(m.prototype, h), Object.defineProperty(m, "prototype", {writable: !1}), P
@@ -1546,9 +1526,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof O != "function" && O !== null) throw new TypeError("Super expression must either be null or a function");
                             f.prototype = Object.create(O && O.prototype, {
                                 constructor: {
-                                    value: f,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: f, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(f, "prototype", {writable: !1}), O && x(f, O)
                         })(u, h);
@@ -1701,9 +1679,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             if (typeof O != "function" && O !== null) throw new TypeError("Super expression must either be null or a function");
                             f.prototype = Object.create(O && O.prototype, {
                                 constructor: {
-                                    value: f,
-                                    writable: !0,
-                                    configurable: !0
+                                    value: f, writable: !0, configurable: !0
                                 }
                             }), Object.defineProperty(f, "prototype", {writable: !1}), O && x(f, O)
                         })(u, h);
@@ -1836,10 +1812,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             key: "_dispatch", value: function (D, L) {
                                 var m = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : null,
                                     h = new CustomEvent(D, {
-                                        detail: {payload: m},
-                                        bubbles: !0,
-                                        cancelable: !0,
-                                        composed: !1
+                                        detail: {payload: m}, bubbles: !0, cancelable: !0, composed: !1
                                     });
                                 L.dispatchEvent(h)
                             }
@@ -1939,8 +1912,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             return ae !== 1 || he !== 1
                         }(y), W = _(y), K = m(b, V), te = {scrollLeft: 0, scrollTop: 0}, ne = {x: 0, y: 0};
                         return (Q || !Q && !$) && ((p(y) !== "body" || T(W)) && (te = (H = y) !== a(H) && g(H) ? {
-                            scrollLeft: (z = H).scrollLeft,
-                            scrollTop: z.scrollTop
+                            scrollLeft: (z = H).scrollLeft, scrollTop: z.scrollTop
                         } : h(H)), g(y) ? ((ne = m(y, !0)).x += y.clientLeft, ne.y += y.clientTop) : W && (ne.x = A(W))), {
                             x: K.left + te.scrollLeft - ne.x,
                             y: K.top + te.scrollTop - ne.y,
@@ -1952,10 +1924,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     function f(b) {
                         var y = m(b), $ = b.offsetWidth, H = b.offsetHeight;
                         return Math.abs(y.width - $) <= 1 && ($ = y.width), Math.abs(y.height - H) <= 1 && (H = y.height), {
-                            x: b.offsetLeft,
-                            y: b.offsetTop,
-                            width: $,
-                            height: H
+                            x: b.offsetLeft, y: b.offsetTop, width: $, height: H
                         }
                     }
 
@@ -2085,8 +2054,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                         var le = ee.elements, Ce = le.reference, ve = le.popper;
                                         if (Te(Ce, ve)) {
                                             ee.rects = {
-                                                reference: u(Ce, q(ve), ee.options.strategy === "fixed"),
-                                                popper: f(ve)
+                                                reference: u(Ce, q(ve), ee.options.strategy === "fixed"), popper: f(ve)
                                             }, ee.reset = !1, ee.placement = ee.options.placement, ee.orderedModifiers.forEach(function (be) {
                                                 return ee.modifiersData[be.name] = Object.assign({}, be.data)
                                             });
@@ -2094,10 +2062,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                 var ye = ee.orderedModifiers[fe], ce = ye.fn, ue = ye.options,
                                                     de = ue === void 0 ? {} : ue, ge = ye.name;
                                                 typeof ce == "function" && (ee = ce({
-                                                    state: ee,
-                                                    options: de,
-                                                    name: ge,
-                                                    instance: he
+                                                    state: ee, options: de, name: ge, instance: he
                                                 }) || ee)
                                             } else ee.reset = !1, fe = -1
                                         }
@@ -2236,10 +2201,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             var H = a($), z = _($), Q = H.visualViewport, V = z.clientWidth, W = z.clientHeight, K = 0,
                                 te = 0;
                             return Q && (V = Q.width, W = Q.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (K = Q.offsetLeft, te = Q.offsetTop)), {
-                                width: V,
-                                height: W,
-                                x: K + A($),
-                                y: te
+                                width: V, height: W, x: K + A($), y: te
                             }
                         }(b)) : d(y) ? function ($) {
                             var H = m($);
@@ -2250,10 +2212,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                 K = x(z.scrollHeight, z.clientHeight, V ? V.scrollHeight : 0, V ? V.clientHeight : 0),
                                 te = -Q.scrollLeft + A($), ne = -Q.scrollTop;
                             return P(V || z).direction === "rtl" && (te += x(z.clientWidth, V ? V.clientWidth : 0) - W), {
-                                width: W,
-                                height: K,
-                                x: te,
-                                y: ne
+                                width: W, height: K, x: te, y: ne
                             }
                         }(_(b)))
                     }
@@ -2368,10 +2327,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     adaptive: V,
                                     roundOffsets: K
                                 })))), y.modifiersData.arrow != null && (y.styles.arrow = Object.assign({}, y.styles.arrow, oe(Object.assign({}, te, {
-                                    offsets: y.modifiersData.arrow,
-                                    position: "absolute",
-                                    adaptive: !1,
-                                    roundOffsets: K
+                                    offsets: y.modifiersData.arrow, position: "absolute", adaptive: !1, roundOffsets: K
                                 })))), y.attributes.popper = Object.assign({}, y.attributes.popper, {"data-popper-placement": y.placement})
                             }, data: {}
                         }, {
@@ -2411,8 +2367,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                 Ce = typeof he == "function" ? he(Object.assign({}, ae, {placement: Ee})) : he,
                                                 ve = Ce[0], fe = Ce[1];
                                             return ve = ve || 0, fe = (fe || 0) * le, [re, ie].indexOf(pe) >= 0 ? {
-                                                x: fe,
-                                                y: ve
+                                                x: fe, y: ve
                                             } : {x: ve, y: fe}
                                         }(ee, y.rects, Q), ne
                                     }, {}), W = V[y.placement], K = W.x, te = W.y;
@@ -2440,10 +2395,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                             kt.length === 0 && (kt = Nt);
                                             var xt = kt.reduce(function (rt, ht) {
                                                 return rt[ht] = Et(vt, {
-                                                    placement: ht,
-                                                    boundary: It,
-                                                    rootBoundary: _t,
-                                                    padding: Yt
+                                                    placement: ht, boundary: It, rootBoundary: _t, padding: Yt
                                                 })[Be(ht)], rt
                                             }, {});
                                             return Object.keys(xt).sort(function (rt, ht) {
@@ -2460,11 +2412,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     }, []), ye = y.rects.reference, ce = y.rects.popper, ue = new Map, de = !0, ge = fe[0], be = 0; be < fe.length; be++) {
                                         var Me = fe[be], Re = Be(Me), Ze = Oe(Me) === De, Ke = [B, N].indexOf(Re) >= 0,
                                             st = Ke ? "width" : "height", We = Et(y, {
-                                                placement: Me,
-                                                boundary: ne,
-                                                rootBoundary: ee,
-                                                altBoundary: Ee,
-                                                padding: te
+                                                placement: Me, boundary: ne, rootBoundary: ee, altBoundary: Ee, padding: te
                                             }), Ie = Ke ? Ze ? ie : re : Ze ? N : B;
                                         ye[st] > ce[st] && (Ie = Rt(Ie));
                                         var qe = Rt(Ie), ke = [];
@@ -2500,8 +2448,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     de = y.rects.reference, ge = y.rects.popper,
                                     be = typeof pe == "function" ? pe(Object.assign({}, y.rects, {placement: y.placement})) : pe,
                                     Me = typeof be == "number" ? {
-                                        mainAxis: be,
-                                        altAxis: be
+                                        mainAxis: be, altAxis: be
                                     } : Object.assign({mainAxis: 0, altAxis: 0}, be),
                                     Re = y.modifiersData.offset ? y.modifiersData.offset[y.placement] : null,
                                     Ze = {x: 0, y: 0};
@@ -2513,10 +2460,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                             Ge = ve === De ? de[Ie] : ge[Ie], Xe = ve === De ? -ge[Ie] : -de[Ie],
                                             vt = y.elements.arrow, ft = ae && vt ? f(vt) : {width: 0, height: 0},
                                             et = y.modifiersData["arrow#persistent"] ? y.modifiersData["arrow#persistent"].padding : {
-                                                top: 0,
-                                                right: 0,
-                                                bottom: 0,
-                                                left: 0
+                                                top: 0, right: 0, bottom: 0, left: 0
                                             }, Bt = et[st], It = et[We], _t = Ct(0, de[Ie], ft[Ie]),
                                             Yt = fe ? de[Ie] / 2 - Fe - _t - Bt - Me.mainAxis : Ge - _t - Bt - Me.mainAxis,
                                             Jt = fe ? -de[Ie] / 2 + Fe + _t + It + Me.mainAxis : Xe + _t + It + Me.mainAxis,
@@ -2579,8 +2523,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     isReferenceHidden: ne,
                                     hasPopperEscaped: ee
                                 }, y.attributes.popper = Object.assign({}, y.attributes.popper, {
-                                    "data-popper-reference-hidden": ne,
-                                    "data-popper-escaped": ee
+                                    "data-popper-reference-hidden": ne, "data-popper-escaped": ee
                                 })
                             }
                         }]
@@ -2610,7 +2553,7 @@ function Mr(r) {
     let e;
     return {
         c() {
-            e = E("div"), e.innerHTML = '<h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">Welcome to <span class="nav-title">iChat.AI</span></h1> <p class="mt-3 text-gray-600 dark:text-gray-400">Your AI-powered Copilot for SQL queries.</p>', v(e, "class", "max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center")
+            e = E("div"), e.innerHTML = '<h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">欢迎使用 <span class="nav-title">iChat.AI</span></h1> <p class="mt-3 text-gray-600 dark:text-gray-400">您的专属ChatBI，AI-Powered Copilot</p>', v(e, "class", "max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center")
         }, m(n, t) {
             U(n, e, t)
         }, p: se, i: se, o: se, d(n) {
@@ -2685,8 +2628,7 @@ function Qr(r) {
         }, p(k, [x]) {
             const D = {};
             x & 5 && (D.$$scope = {
-                dirty: x,
-                ctx: k
+                dirty: x, ctx: k
             }), l.$set(D), g && g.p && (!a || x & 4) && Zt(g, d, k, k[2], a ? Ut(d, k[2], x, null) : Wt(k[2]), null)
         }, i(k) {
             a || (M(l.$$.fragment, k), M(g, k), a = !0)
@@ -2809,7 +2751,7 @@ function Jr(r) {
     const l = r[1].default, c = Gt(l, r, r[0], null);
     return {
         c() {
-            e = E("li"), n = E("img"), o = Z(), i = E("div"), c && c.c(), or(n.src, t = "/vanna.svg") || v(n, "src", t), v(n, "class", "flex-shrink-0 w-[2.375rem] h-[2.375rem] "), v(n, "alt", "agent logo"), v(i, "class", "space-y-3 overflow-x-auto overflow-y-hidden"), v(e, "class", "max-w-4xl py-2 px-4 sm:px-6 lg:px-8 mx-auto flex gap-x-2 sm:gap-x-4")
+            e = E("li"), n = E("img"), o = Z(), i = E("div"), c && c.c(), or(n.src, t = "/ichat.svg") || v(n, "src", t), v(n, "class", "flex-shrink-0 w-[2.375rem] h-[2.375rem] "), v(n, "alt", "agent logo"), v(i, "class", "space-y-3 overflow-x-auto overflow-y-hidden"), v(e, "class", "max-w-4xl py-2 px-4 sm:px-6 lg:px-8 mx-auto flex gap-x-2 sm:gap-x-4")
         }, m(a, d) {
             U(a, e, d), w(e, n), w(e, o), w(e, i), c && c.m(i, null), s = !0
         }, p(a, [d]) {
@@ -2854,7 +2796,7 @@ function eo(r) {
     let e, n, t, o, i, s, l;
     return s = new pt({props: {$$slots: {default: [Xr]}, $$scope: {ctx: r}}}), {
         c() {
-            e = E("li"), n = E("img"), o = Z(), i = E("div"), J(s.$$.fragment), or(n.src, t = "/vanna.svg") || v(n, "src", t), v(n, "class", "flex-shrink-0 w-[2.375rem] h-[2.375rem] animate-bounce "), v(n, "alt", "agent logo"), v(i, "class", "space-y-3"), v(e, "class", "max-w-4xl py-2 px-4 sm:px-6 lg:px-8 mx-auto flex gap-x-2 sm:gap-x-4")
+            e = E("li"), n = E("img"), o = Z(), i = E("div"), J(s.$$.fragment), or(n.src, t = "/ichat.svg") || v(n, "src", t), v(n, "class", "flex-shrink-0 w-[2.375rem] h-[2.375rem] animate-bounce "), v(n, "alt", "agent logo"), v(i, "class", "space-y-3"), v(e, "class", "max-w-4xl py-2 px-4 sm:px-6 lg:px-8 mx-auto flex gap-x-2 sm:gap-x-4")
         }, m(c, a) {
             U(c, e, a), w(e, n), w(e, o), w(e, i), F(s, i, null), l = !0
         }, p(c, [a]) {
@@ -3367,13 +3309,11 @@ function xo(r) {
     let e, n, t, o, i, s, l, c;
     return e = new Mt({props: {message: r[15].question}}), t = new tt({
         props: {
-            $$slots: {default: [Do]},
-            $$scope: {ctx: r}
+            $$slots: {default: [Do]}, $$scope: {ctx: r}
         }
     }), i = new tt({
         props: {
-            $$slots: {default: [Ho]},
-            $$scope: {ctx: r}
+            $$slots: {default: [Ho]}, $$scope: {ctx: r}
         }
     }), l = new tt({props: {$$slots: {default: [Mo]}, $$scope: {ctx: r}}}), {
         c() {
@@ -3423,8 +3363,7 @@ function So(r) {
     let e, n, t, o, i, s, l, c;
     e = new tt({props: {$$slots: {default: [Bo]}, $$scope: {ctx: r}}}), t = new tt({
         props: {
-            $$slots: {default: [No]},
-            $$scope: {ctx: r}
+            $$slots: {default: [No]}, $$scope: {ctx: r}
         }
     });
     const a = [Vo, Qo], d = [];
@@ -3731,7 +3670,7 @@ function Io(r) {
     let e;
     return {
         c() {
-            e = we("Were the results correct?")
+            e = we("请问结果正确吗?")
         }, m(n, t) {
             U(n, e, t)
         }, d(n) {
@@ -3744,8 +3683,7 @@ function Nn(r) {
     let e, n, t, o;
     return e = new Ht({props: {message: "Yes", onSubmit: r[9]}}), t = new Ht({
         props: {
-            message: "No",
-            onSubmit: r[10]
+            message: "No", onSubmit: r[10]
         }
     }), {
         c() {
@@ -3779,8 +3717,7 @@ function No(r) {
         }, p(s, l) {
             const c = {};
             l & 8388608 && (c.$$scope = {
-                dirty: l,
-                ctx: s
+                dirty: l, ctx: s
             }), e.$set(c), s[0] === null ? i ? (i.p(s, l), l & 1 && M(i, 1)) : (i = Nn(s), i.c(), M(i, 1), i.m(t.parentNode, t)) : i && (Ne(), I(i, 1, 1, () => {
                 i = null
             }), Qe())
@@ -4529,10 +4466,7 @@ function nr(r) {
     let e, n;
     return e = new ri({
         props: {
-            message: "Are you sure you want to delete this?",
-            buttonLabel: "Delete",
-            onClose: r[19],
-            onConfirm: r[20]
+            message: "Are you sure you want to delete this?", buttonLabel: "Delete", onClose: r[19], onConfirm: r[20]
         }
     }), {
         c() {
@@ -4835,10 +4769,7 @@ function xi(r) {
     let e, n, t, o, i, s;
     n = new Dr({
         props: {
-            getTrainingData: r[11],
-            newQuestionPage: r[12],
-            loadQuestionPage: r[13],
-            questionHistory: r[7]
+            getTrainingData: r[11], newQuestionPage: r[12], loadQuestionPage: r[13], questionHistory: r[7]
         }
     });
     const l = [ki, wi], c = [];
@@ -4887,14 +4818,12 @@ function Si(r, e, n) {
 
     function k(q) {
         g(), _({
-            type: "user_question",
-            question: q
+            type: "user_question", question: q
         }), n(4, s = !0), f("generate_sql", "GET", {question: q}).then(_).then(B => {
             B.type === "sql" && (window.location.hash = B.id, f("run_sql", "GET", {id: B.id}).then(_).then(N => {
                 N.type === "df" && f("generate_plotly_figure", "GET", {id: N.id}).then(_).then(ie => {
                     ie.type === "plotly_figure" && (n(7, d = [...d, {
-                        question: q,
-                        id: ie.id
+                        question: q, id: ie.id
                     }]), f("generate_followup_questions", "GET", {id: ie.id}).then(_))
                 })
             }))
@@ -4962,9 +4891,7 @@ function Si(r, e, n) {
             if (B === "GET") ie = Object.entries(N).filter(([Ae, De]) => Ae !== "endpoint" && Ae !== "addMessage").map(([Ae, De]) => `${encodeURIComponent(Ae)}=${encodeURIComponent(De)}`).join("&"), re = await fetch(`/api/v0/${q}?${ie}`); else {
                 let Ae = JSON.stringify(N);
                 re = await fetch(`/api/v0/${q}`, {
-                    method: "POST",
-                    headers: {"Content-Type": "application/json"},
-                    body: Ae
+                    method: "POST", headers: {"Content-Type": "application/json"}, body: Ae
                 })
             }
             if (!re.ok) throw new Error("The server returned an error. See the server logs for more details.");
@@ -4989,9 +4916,7 @@ function Si(r, e, n) {
         if (B && B.type === "user_question") {
             let N = {question: B.question, sql: q};
             f("train", "POST", N), n(1, t = t.filter(ie => ie.type !== "user_sql")), _({
-                type: "sql",
-                text: q,
-                id: window.location.hash
+                type: "sql", text: q, id: window.location.hash
             })
         }
     }

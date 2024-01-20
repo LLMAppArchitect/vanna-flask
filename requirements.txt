@@ -1,4 +1,7 @@
 flask
-vanna[snowflake]
 db-dtypes
 python-dotenv
+plotly
+requests
+sqlparse
+pymysql
